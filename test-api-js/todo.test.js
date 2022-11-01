@@ -33,4 +33,13 @@ describe('todo test suite', () => {
     test("delete_todos", () => {
         expect(todo_service.delete_todo(0).todo.length).toEqual(3);
     });
+
+    let updatedtodo = {
+        "title": "updates task",
+        "description": "trying update test",
+        "done": false
+        }
+    test("updating_todos", () => {
+        expect(todo_service.update_todo(0,updatedtodo).todo.length).toEqual(3);
+    });
 });
