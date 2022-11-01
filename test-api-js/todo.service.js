@@ -31,10 +31,13 @@ class todoservice{
 
     delete_todo(id){
         // Your code here
+        this.todos.todo.splice(id,1);
+        return this.todos;
     }
 
     update_todo(id, todo){
         // Your code here
+        
     }
 }
 
