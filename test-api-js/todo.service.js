@@ -37,7 +37,8 @@ class todoservice{
 
     update_todo(id, todo){
         // Your code here
-        
+        this.todos.todo.splice(id,1,todo);
+        return this.todos;
     }
 }
 
